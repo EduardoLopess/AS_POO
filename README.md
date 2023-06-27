@@ -13,6 +13,7 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
   POST, GET, PUT e DELETE
 
    POST /api/Autor
+   '''
     {
       "nome": "string",
       "telefone": "string",
@@ -26,7 +27,7 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
         }
       ]
     } 
-
+'''
 
     
 ## EmprestimoController
