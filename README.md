@@ -1,7 +1,8 @@
 
 AS - Programação Orientada a Objetos.
 
-Api criada para atender gerenciamento de um sistema de biblioteca, divididos em quatros controllers diferentes com suas respectivas operações REST.
+API criada para atender ao gerenciamento de um sistema de biblioteca, dividido em quatro controladores diferentes, com suas respectivas operações REST.
+
 ## LivroController
   POST, GET, PUT e DELETE 
 ## UsuarioController
