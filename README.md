@@ -6,9 +6,29 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
 ## LivroController
   POST, GET, PUT e DELETE 
 ## UsuarioController
-  POST, GET, PUT e DELETE 
+  POST, GET, PUT e DELETE
+
+  
 ## AutorController
-  POST, GET, PUT e DELETE 
+  POST, GET, PUT e DELETE
+
+   POST /api/Autor
+    {
+      "nome": "string",
+      "telefone": "string",
+      "livros": [
+        {
+          "titulo": "string",
+          "genero": "string",
+          "autores": [
+            "string"
+          ]
+        }
+      ]
+    } 
+
+
+    
 ## EmprestimoController
   POST, GET, PUT, DELETE, GET, POST e DELETE
 
