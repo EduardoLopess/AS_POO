@@ -123,7 +123,7 @@ PUT /api/Autor/{id}
   - Atualiza as informações de um autor existente.
   
   Exemplo de corpo da requisição:
-    ```
+  ```
       {
         "nome": "string",
         "telefone": "string",
@@ -137,7 +137,7 @@ PUT /api/Autor/{id}
           }
         ]
       }
-    ```  
+  ```  
  DELETE /api/Autor/{id}
    - Exclui um autor com base no ID.
          
