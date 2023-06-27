@@ -12,7 +12,7 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
  
  - Cria um novo livro.
    Exemplo de corpo da requisição:  
- ``` 
+``` 
   {
   "titulo": "string",
   "genero": "string",
@@ -40,7 +40,7 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
    POST /api/Autor
   - Cria um novo autor.
   Exemplo de corpo da requisição:  
-   ```
+ ```
     {
       "nome": "string",
       "telefone": "string",
@@ -54,7 +54,7 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
         }
       ]
     } 
-   ```
+ ```
 GET /api/Autor
   - Retorna todos os autores cadastrados junto de seus livros.
 
@@ -92,7 +92,7 @@ PUT /api/Autor/{id}
   
   POST /api/Emprestimo
 
-   - Cria um novo empréstimo.
+  - Cria um novo empréstimo.
   Exemplo de corpo da requisição:
   ```
      {
@@ -121,7 +121,84 @@ PUT /api/Autor/{id}
           }
         }
   ```
+  GET /api/Emprestimo
   
+  - Retorna todos os empréstimos cadastrados.
+  
+  GET /api/Emprestimo/{id}
+  
+  - Retorna um empréstimo específico com base no ID.
+  
+  PUT /api/Emprestimo/{id}
+  
+  - Atualiza as informações de um empréstimo existente.
+  
+  Exemplo de corpo da requisição:
+  ```
+    {
+      "dataEmprestimo": "2023-06-27T05:23:22.320Z",
+      "dataDevolucao": "2023-06-27T05:23:22.320Z",
+      "usuario": {
+        "nome": "string",
+        "endereco": "string",
+        "telefone": "string",
+        "emprestimos": [
+          "string"
+        ]
+      },
+      "livro": {
+        "titulo": "string",
+        "genero": "string",
+        "autores": [
+          {
+            "nome": "string",
+            "telefone": "string",
+            "livros": [
+              "string"
+            ]
+          }
+        ]
+      }
+    }
+  ```
+  DELETE /api/Emprestimo/{id}
+  - Exclui um empréstimo com base no ID.
+  
+  POST /api/Emprestimo/user/{userId}/livro/{livroId}/emprestar
+
+  - Cria um novo empréstimo associado a um usuário e um livro específicos.
+    
+  userId (parâmetro de rota): ID do usuário associado ao empréstimo.
+  livroId (parâmetro de rota): ID do livro associado ao empréstimo.
+    
+  Exemplo de corpo da requisição:
+    
+    ```
+      {
+        "dataEmprestimo": "2023-06-27T02:37:37.565",
+        "dataDevolucao": "2023-06-30T02:37:37.565"
+      }
+    ```
+  DELETE /api/Emprestimo/emprestimo/{emprestimoId}/user/{userId}/devolver
+
+   - Registra a devolução de um livro em um empréstimo associado a um usuário específico.
+
+  emprestimoId (parâmetro de rota): ID do empréstimo.
+  userId (parâmetro de rota): ID do usuário associado ao empréstimo.
+
+  Exemplo de corpo da requisição:
+  
+    ```
+      {
+        "dataDevolucao": "2023-07-05T02:37:37.565"
+      }
+    ```
+
+
+
+
+
+
 ------------------
 Visão geral
 
