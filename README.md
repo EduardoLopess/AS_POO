@@ -11,6 +11,8 @@ Api criada para atender gerenciamento de um sistema de biblioteca, divididos em 
 ## EmprestimoController
   POST, GET, PUT, DELETE, GET, POST e DELETE
 
+  -> O controller de empréstimo conta com o acréscimo de mais três rotas responsáveis por controlar o empréstimo e devolução do usuário.
+
 
 
 ![API endpoint](https://github.com/EduardoLopess/AS_POO/assets/80491564/71fd1a5b-652c-4c38-88dc-e911656430df)
