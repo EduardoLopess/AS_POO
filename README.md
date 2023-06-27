@@ -70,17 +70,17 @@ Exemplo de corpo da requisição:
   ```
   GET /api/Usuario
 
-Retorna todos os usuários cadastrados.
+  - Retorna todos os usuários cadastrados.
 
-GET /api/Usuario/{id}
+  GET /api/Usuario/{id}
 
 Retorna um usuário específico com base no ID.
 
   PUT /api/Usuario/{id}
 
   - Atualiza as informações de um usuário existente.
-  - 
-Exemplo de corpo da requisição:
+    
+  Exemplo de corpo da requisição:
   ```
   {
     "nome": "Novo Nome do Usuário",
@@ -88,10 +88,9 @@ Exemplo de corpo da requisição:
     "telefone": "Novo Telefone do Usuário"
   }
   ```
-DELETE /api/Usuario/{id}
+  DELETE /api/Usuario/{id}
 - Exclui um usuário com base no ID.
-
- 
+  
 ## AutorController
   POST, GET, PUT e DELETE
 
