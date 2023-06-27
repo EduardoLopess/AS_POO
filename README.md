@@ -28,7 +28,29 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
       ]
     } 
 ```
+GET /api/Autor
+```
+    {
+    "data": [
+      {
+        "id": 1,
+        "nome": "autor nome",
+        "telefone": "1234523",
+        "livros": [
+          {
+            "id": 1,
+            "titulo": "Livro tritulo",
+            "genero": "sasdasda",
+            "autores": [
+              "autor nome"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 
+```
     
 ## EmprestimoController
   POST, GET, PUT, DELETE, GET, POST e DELETE
