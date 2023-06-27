@@ -94,7 +94,7 @@ PUT /api/Autor/{id}
 
    - Cria um novo empréstimo.
   Exemplo de corpo da requisição:
-    ```
+  ```
      {
       "dataEmprestimo": "2023-06-27T05:19:00.486Z",
       "dataDevolucao": "2023-06-27T05:19:00.486Z",
@@ -120,7 +120,7 @@ PUT /api/Autor/{id}
             ]
           }
         }
-    ```
+  ```
   
 ------------------
 Visão geral
