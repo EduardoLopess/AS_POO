@@ -27,13 +27,71 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
   ]
 ```
   
- GET /api/Livro  
+  GET /api/Livro  
+  - Retorna todos os livros cadastrados.
 
+  GET /api/Livro/{id}
   
+   - Retorna um livro específico com base no ID.
+  
+  PUT /api/Livro/{id}
+  - Atualiza as informações de um livro existente.
+
+  Exemplo de corpo da requisição:
+ ```
+    {
+    "titulo": "string",
+    "genero": "string",
+    "autores": [
+      {
+        "nome": "string",
+        "telefone": "string",
+        "livros": [
+          "string"
+        ]
+      }
+    ]
+  }
+```  
 ## UsuarioController
   POST, GET, PUT e DELETE
+  POST /api/Usuario
 
-  
+Cria um novo usuário.
+
+Exemplo de corpo da requisição:
+
+  ```
+  {
+    "nome": "Nome do Usuário",
+    "endereco": "Endereço do Usuário",
+    "telefone": "Telefone do Usuário"
+  }
+  ```
+  GET /api/Usuario
+
+Retorna todos os usuários cadastrados.
+
+GET /api/Usuario/{id}
+
+Retorna um usuário específico com base no ID.
+
+  PUT /api/Usuario/{id}
+
+  - Atualiza as informações de um usuário existente.
+  - 
+Exemplo de corpo da requisição:
+  ```
+  {
+    "nome": "Novo Nome do Usuário",
+    "endereco": "Novo Endereço do Usuário",
+    "telefone": "Novo Telefone do Usuário"
+  }
+  ```
+DELETE /api/Usuario/{id}
+- Exclui um usuário com base no ID.
+
+ 
 ## AutorController
   POST, GET, PUT e DELETE
 
@@ -168,8 +226,8 @@ PUT /api/Autor/{id}
 
   - Cria um novo empréstimo associado a um usuário e um livro específicos.
     
-  userId (parâmetro de rota): ID do usuário associado ao empréstimo.
-  livroId (parâmetro de rota): ID do livro associado ao empréstimo.
+  - userId (parâmetro de rota): ID do usuário associado ao empréstimo.
+  - livroId (parâmetro de rota): ID do livro associado ao empréstimo.
     
   Exemplo de corpo da requisição:
     
@@ -183,8 +241,8 @@ PUT /api/Autor/{id}
 
    - Registra a devolução de um livro em um empréstimo associado a um usuário específico.
 
-  emprestimoId (parâmetro de rota): ID do empréstimo.
-  userId (parâmetro de rota): ID do usuário associado ao empréstimo.
+  - emprestimoId (parâmetro de rota): ID do empréstimo.
+  - userId (parâmetro de rota): ID do usuário associado ao empréstimo.
 
   Exemplo de corpo da requisição:
   
