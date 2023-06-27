@@ -31,11 +31,14 @@ namespace Data.Repository
                 .SingleOrDefault(i => i.Id == entityId);
         }
 
-       public void Delete(int entityId)
+        public void Delete(int entityId)
         {
-            var autor = GetById(entityId);
-            _context.Set<Autor>().Remove(autor);
-            _context.SaveChanges();
+             var autor = GetById(entityId);
+            if (autor != null)
+            {
+                _context.Set<Autor>().Remove(autor);
+                _context.SaveChanges();
+            }
         }
 
         public void Update(Autor entity)

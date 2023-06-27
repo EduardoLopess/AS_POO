@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj": {}
+    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj": {
+    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\Edu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\obj\\",
+        "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\dudul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Edu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dudul\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -29,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj"
+              "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj"
               }
             }
           }
@@ -76,24 +73,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
+    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Edu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\dudul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Edu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dudul\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -132,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

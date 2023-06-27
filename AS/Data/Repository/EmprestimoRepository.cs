@@ -56,7 +56,7 @@ namespace Data.Repository
                         .ToList();
         }
 
-        public bool PegarLivro(int userId, int livroId)
+        public bool CanUserBorrowBook(int userId, int livroId)
         {
             Usuario usuario = _context.Set<Usuario>()
                 .Include(u => u.Emprestimos)
@@ -79,7 +79,7 @@ namespace Data.Repository
             return true; // O usuário pode pegar emprestado o livro
         }
 
-        public bool UsuarioPodePegarLivro(int emprestimoId, int userId)
+        public bool CanUserReturnBook(int emprestimoId, int userId)
         {
             // Verificar se o empréstimo existe e pertence ao usuário
             bool emprestimoExists = _context.Set<Emprestimo>()

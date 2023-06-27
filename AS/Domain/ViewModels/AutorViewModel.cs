@@ -9,6 +9,3 @@ namespace Domain.ViewModels
         
     }
 }
-
-
-

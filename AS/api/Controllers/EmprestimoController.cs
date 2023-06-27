@@ -28,7 +28,7 @@ public class EmprestimoController : ControllerBase
     [HttpGet("{id}")]
     public IActionResult GetById(int id)
     {
-        var emprestimos = _mapper.Map<EmprestimoDTO>(_emprestimoRepository.GetById(id));
+        var emprestimos = _mapper.Map<AutorDTO>(_emprestimoRepository.GetById(id));
         return HttpMessageOk(emprestimos);
     }
 
@@ -44,7 +44,7 @@ public class EmprestimoController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public IActionResult Update(int id, EmprestimoViewModel model)
+    public IActionResult Update(int id, AutorViewModel model)
     {
         if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
         var emprestimo = _mapper.Map<Emprestimo>(model);
@@ -73,7 +73,7 @@ public class EmprestimoController : ControllerBase
     [HttpPost("user/{userId}/livro/{livroId}/emprestar")]
     public IActionResult BorrowBook(int userId, int livroId)
     {
-        if (!_emprestimoRepository.UsuarioPodePegarLivro(userId, livroId))
+        if (!_emprestimoRepository.CanUserBorrowBook(userId, livroId))
             return HttpMessageError("Usuário não pode pegar emprestado este livro");
 
         var emprestimo = new Emprestimo
@@ -90,7 +90,7 @@ public class EmprestimoController : ControllerBase
     [HttpDelete("emprestimo/{emprestimoId}/user/{userId}/devolver")]
     public IActionResult ReturnBook(int emprestimoId, int userId)
     {
-        if (!_emprestimoRepository.PegarLivro(emprestimoId, userId))
+        if (!_emprestimoRepository.CanUserReturnBook(emprestimoId, userId))
             return HttpMessageError("Usuário não pode devolver este livro");
 
         _emprestimoRepository.Delete(emprestimoId);

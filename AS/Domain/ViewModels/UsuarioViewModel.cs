@@ -6,6 +6,6 @@ namespace Domain.ViewModels
         public string Endereco { get; set; }
         public string Telefone { get; set; }
 
-        public List<EmprestimoViewModel> Emprestimos { get; set; }
+       
     }
 }

@@ -19,10 +19,10 @@ namespace api.Configuration
             CreateMap<Usuario, UsuarioDTO>()
                 .ForMember(dest => dest.Emprestimos, opt => opt.MapFrom(src => src.Emprestimos));
 
-                
             CreateMap<Emprestimo, EmprestimoDTO>()
-                .ForMember(dest => dest.Usuario, opt => opt.MapFrom(src => src.Usuario))
-                .ForMember(dest => dest.Livro, opt => opt.MapFrom(src => src.Livro));
+                .ForMember(dest => dest.Livro, opt => opt.MapFrom(src => src.Livro))
+                .ForMember(dest => dest.LivroId, opt => opt.MapFrom(src => src.Livro.Id))
+                .ForMember(dest => dest.UsuarioId, opt => opt.MapFrom(src => src.Usuario.Id));
 
         }
     }

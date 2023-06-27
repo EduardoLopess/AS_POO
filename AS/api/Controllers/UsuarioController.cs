@@ -13,12 +13,14 @@ namespace api.Controllers
     {
         private readonly IUsuarioRepository _usuarioRepository;
         private readonly IEmprestimoRepository _emprestimoRepository;
+        private readonly ILivroRepository _livroRepository;
         private readonly IMapper _mapper;
 
-        public UsuarioController(IUsuarioRepository usuarioRepository, IEmprestimoRepository emprestimoRepository, IMapper mapper)
+        public UsuarioController(IUsuarioRepository usuarioRepository, IEmprestimoRepository emprestimoRepository, ILivroRepository livroRepository, IMapper mapper)
         {
             _usuarioRepository = usuarioRepository;
             _emprestimoRepository = emprestimoRepository;
+            _livroRepository = livroRepository;
             _mapper = mapper;
         }
 
@@ -33,31 +35,29 @@ namespace api.Controllers
             {
                 var emprestimos = _emprestimoRepository.GetEmprestimosByUsuario(usuarioDTO.Id);
                 usuarioDTO.Emprestimos = _mapper.Map<IList<EmprestimoDTO>>(emprestimos);
+
+                // Mapear os livros para cada empréstimo
+                foreach (var emprestimoDTO in usuarioDTO.Emprestimos)
+                {
+                    var livro = _livroRepository.GetById(emprestimoDTO.LivroId); // Ou método equivalente para obter o livro
+                    emprestimoDTO.Livro = _mapper.Map<LivroDTO>(livro);
+                }
             }
 
             return Ok(usuariosDTO);
         }
 
-
-
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            var usuario = _usuarioRepository.GetById(id);
-            if (usuario == null)
-                return NotFound();
-
-            var usuarioDTO = _mapper.Map<UsuarioDTO>(usuario);
-            usuarioDTO.Emprestimos = _mapper.Map<IList<EmprestimoDTO>>(_emprestimoRepository.GetEmprestimosByUsuario(id));
-
-            return Ok(usuarioDTO);
+            var usuarios = _mapper.Map<UsuarioDTO>(_usuarioRepository.GetById(id));
+            return HttpMessageOk(usuarios);
         }
-
+ 
         [HttpPost]
         public IActionResult Create(UsuarioViewModel model)
         {
-            if (!ModelState.IsValid)
-                return HttpMessageError("Dados incorretos");
+            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
 
             var usuario = _mapper.Map<Usuario>(model);
             _usuarioRepository.Create(usuario);
@@ -68,28 +68,21 @@ namespace api.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(int id, UsuarioViewModel model)
         {
-            if (!ModelState.IsValid)
-                return HttpMessageError("Dados incorretos");
-
-            var usuario = _usuarioRepository.GetById(id);
-            if (usuario == null)
-                return NotFound();
-
-            _mapper.Map(model, usuario);
+            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
+            var usuario = _mapper.Map<Usuario>(model);
+            usuario.Id = id;
             _usuarioRepository.Update(usuario);
 
             return HttpMessageOk(_mapper.Map<UsuarioDTO>(usuario));
+
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             var usuario = _usuarioRepository.GetById(id);
-            if (usuario == null)
-                return NotFound();
-
+            if (usuario  == null) return NotFound();
             _usuarioRepository.Delete(id);
-
             return HttpMessageOk(id);
         }
 
@@ -105,5 +98,6 @@ namespace api.Controllers
         {
             return BadRequest(new { message });
         }
+
     }
 }

@@ -31,7 +31,7 @@ namespace Data.Types
                 .HasForeignKey(e => e.LivroId);
             
             builder.HasOne(e => e.Usuario)
-                .WithMany()
+                .WithMany(u => u.Emprestimos)
                 .HasForeignKey(e => e.UsuarioId)
                 .IsRequired();  
         }

@@ -44,3 +44,10 @@ namespace Data.Repository
         }
     }
 }
+
+
+//  private readonly DbContext _context;
+//         public AutorRepository(DbContext context)
+//         {
+//             _context = context;
+//         }

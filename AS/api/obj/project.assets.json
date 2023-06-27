@@ -1889,40 +1889,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Edu\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\dudul\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\api\\api.csproj",
+      "projectUniqueName": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\api\\api.csproj",
-      "packagesPath": "C:\\Users\\Edu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\api\\obj\\",
+      "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\api\\api.csproj",
+      "packagesPath": "C:\\Users\\dudul\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Edu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\dudul\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj"
+            "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj"
             },
-            "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj"
+            "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj"
             }
           }
         }
@@ -1983,7 +1978,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
