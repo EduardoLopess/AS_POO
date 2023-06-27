@@ -4,7 +4,33 @@ AS - Programação Orientada a Objetos.
 API criada para atender ao gerenciamento de um sistema de biblioteca, dividido em quatro controladores diferentes, com suas respectivas operações REST.
 
 ## LivroController
-  POST, GET, PUT e DELETE 
+  POST, GET, PUT e DELETE
+
+  LivroController
+
+  POST /api/Livro
+ 
+ - Cria um novo livro.
+   Exemplo de corpo da requisição:  
+  ```
+  {
+  "titulo": "string",
+  "genero": "string",
+  "autores": [
+    {
+      "nome": "string",
+      "telefone": "string",
+      "livros": [
+        "string"
+      ]
+    }
+  ]
+
+
+  ```
+ GET /api/Livro  
+
+  
 ## UsuarioController
   POST, GET, PUT e DELETE
 
@@ -13,6 +39,8 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
   POST, GET, PUT e DELETE
 
    POST /api/Autor
+  - Cria um novo autor.
+  Exemplo de corpo da requisição:  
    ```
     {
       "nome": "string",
@@ -27,36 +55,74 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
         }
       ]
     } 
-```
+   ```
 GET /api/Autor
-```
-    {
-    "data": [
+  - Retorna todos os autores cadastrados junto de seus livros.
+
+GET /api/Autor/{id}
+  - Retorna um autor específico com base no ID junto de seus livros.
+    
+PUT /api/Autor/{id}
+  - Atualiza as informações de um autor existente.
+  
+  Exemplo de corpo da requisição:
+    ```
       {
-        "id": 1,
-        "nome": "autor nome",
-        "telefone": "1234523",
+        "nome": "string",
+        "telefone": "string",
         "livros": [
           {
-            "id": 1,
-            "titulo": "Livro tritulo",
-            "genero": "sasdasda",
+            "titulo": "string",
+            "genero": "string",
             "autores": [
-              "autor nome"
+              "string"
             ]
           }
         ]
       }
-    ]
-  }
-
-```
-    
+    ```  
+ DELETE /api/Autor/{id}
+   - Exclui um autor com base no ID.
+         
 ## EmprestimoController
+
+> O controller de empréstimo conta com o acréscimo de mais três rotas responsáveis por controlar o empréstimo e devolução do usuário.
+
+
   POST, GET, PUT, DELETE, GET, POST e DELETE
+  
+  POST /api/Emprestimo
 
-  -> O controller de empréstimo conta com o acréscimo de mais três rotas responsáveis por controlar o empréstimo e devolução do usuário.
-
+   - Cria um novo empréstimo.
+  Exemplo de corpo da requisição:
+    ```
+          {
+          "dataEmprestimo": "2023-06-27T05:19:00.486Z",
+          "dataDevolucao": "2023-06-27T05:19:00.486Z",
+          "usuario": {
+            "nome": "string",
+            "endereco": "string",
+            "telefone": "string",
+            "emprestimos": [
+              "string"
+            ]
+          },
+          "livro": {
+            "titulo": "string",
+            "genero": "string",
+            "autores": [
+              {
+                "nome": "string",
+                "telefone": "string",
+                "livros": [
+                  "string"
+                ]
+              }
+            ]
+          }
+        }
+    ```
+  
 ------------------
 Visão geral
 
