@@ -12,7 +12,7 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
  
  - Cria um novo livro.
    Exemplo de corpo da requisição:  
-  ```
+ ``` 
   {
   "titulo": "string",
   "genero": "string",
@@ -25,9 +25,8 @@ API criada para atender ao gerenciamento de um sistema de biblioteca, dividido e
       ]
     }
   ]
-
-
-  ```
+```
+  
  GET /api/Livro  
 
   
@@ -96,14 +95,14 @@ PUT /api/Autor/{id}
    - Cria um novo empréstimo.
   Exemplo de corpo da requisição:
     ```
-          {
-          "dataEmprestimo": "2023-06-27T05:19:00.486Z",
-          "dataDevolucao": "2023-06-27T05:19:00.486Z",
-          "usuario": {
-            "nome": "string",
-            "endereco": "string",
-            "telefone": "string",
-            "emprestimos": [
+     {
+      "dataEmprestimo": "2023-06-27T05:19:00.486Z",
+      "dataDevolucao": "2023-06-27T05:19:00.486Z",
+      "usuario": {
+      "nome": "string",
+      "endereco": "string",
+       "telefone": "string",
+       "emprestimos": [
               "string"
             ]
           },
