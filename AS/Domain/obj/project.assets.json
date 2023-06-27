@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Edu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

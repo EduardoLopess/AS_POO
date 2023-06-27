@@ -1,5 +1,3 @@
-using Domain.Entities;
-
 namespace Domain.ViewModels
 {
     public class EmprestimoViewModel
@@ -12,3 +10,6 @@ namespace Domain.ViewModels
 
     }
 }
+
+
+

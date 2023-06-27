@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\api\\api.csproj": {}
+    "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\api\\api.csproj": {
+    "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\api\\api.csproj",
+        "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\api\\api.csproj",
         "packagesPath": "C:\\Users\\Edu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\api\\obj\\",
+        "outputPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Data\\Data.csproj"
+              "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj"
               },
-              "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Domain\\Domain.csproj"
+              "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj"
               }
             }
           }
@@ -99,14 +99,14 @@
         }
       }
     },
-    "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Data\\Data.csproj": {
+    "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\Edu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Data\\obj\\",
+        "outputPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -124,8 +124,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Domain\\Domain.csproj"
+              "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj"
               }
             }
           }
@@ -175,14 +175,14 @@
         }
       }
     },
-    "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
+    "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Edu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

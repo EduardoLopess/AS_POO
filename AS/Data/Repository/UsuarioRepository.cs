@@ -20,14 +20,18 @@ namespace Data.Repository
         public IList<Usuario> GetAll()
         {
             return _context.Set<Usuario>()
-                .Include(e => e.Emprestimos)
+                .Include(u => u.Emprestimos)
+                    .ThenInclude(e => e.Livro)
+                    .ThenInclude(l => l.Autores)
                 .ToList();
         }
 
         public Usuario GetById(int entityId)
         {
             return _context.Set<Usuario>()
-                .Include(e => e.Emprestimos)
+                .Include(u => u.Emprestimos) 
+                    .ThenInclude(e => e.Livro) 
+                    .ThenInclude(l => l.Autores) 
                 .SingleOrDefault(i => i.Id == entityId);
         }
 

@@ -22,8 +22,8 @@ namespace Data.Types
 
             builder.Property(a => a.Telefone)
                 .HasColumnName("Telefone")
-                .HasMaxLength(9)
-                .IsRequired(); 
+                .HasMaxLength(9);
+                
             
         }
     }

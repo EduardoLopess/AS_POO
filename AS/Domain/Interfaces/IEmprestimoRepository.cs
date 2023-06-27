@@ -5,7 +5,8 @@ namespace Domain.Interfaces
     public interface IEmprestimoRepository : IBaseRepository<Emprestimo>
     {
         IList<Emprestimo> GetAllByUserId(int userId);
-        bool CanUserBorrowBook(int userId, int livroId);
-        bool CanUserReturnBook(int emprestimoId, int userId);
+        bool PegarLivro(int userId, int livroId);
+        bool UsuarioPodePegarLivro(int emprestimoId, int userId);
+        IList<Emprestimo> GetEmprestimosByUsuario(int usuarioId);
     }
 }

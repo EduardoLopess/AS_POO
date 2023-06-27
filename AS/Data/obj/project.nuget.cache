@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4IPn3cCQ0VXeJOgvk4Fo/rBJHJztcYaeL1pOYcw8m+bQJck6E/XnWIeVzRDqi24PyRiztQgex1xm9S1sQGE5vg==",
+  "dgSpecHash": "85BtVLq8gKKwQUOlse71u3KGlKyREcTW7g9Ps0NyDauEB7oolFEFIsUFgLDINliSt0IQEOJj4Z2UpspdOzQnpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\Data\\Data.csproj",
+  "projectFilePath": "C:\\Users\\Edu\\Desktop\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Edu\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Edu\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.7\\microsoft.data.sqlite.core.7.0.7.nupkg.sha512",

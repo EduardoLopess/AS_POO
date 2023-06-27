@@ -22,6 +22,7 @@ namespace Data.Repository
             return _context.Set<Emprestimo>()
                 .Include(a => a.Usuario)
                 .Include(l => l.Livro)
+                .Include(e => e.Livro.Autores)
                     .ToList();
         }
 
@@ -30,6 +31,7 @@ namespace Data.Repository
             return _context.Set<Emprestimo>()
                 .Include(a => a.Usuario)
                 .Include(l => l.Livro)
+                .Include(e => e.Livro.Autores)
                     .SingleOrDefault(i => i.Id == entityId);
         }
 
@@ -54,7 +56,7 @@ namespace Data.Repository
                         .ToList();
         }
 
-        public bool CanUserBorrowBook(int userId, int livroId)
+        public bool PegarLivro(int userId, int livroId)
         {
             Usuario usuario = _context.Set<Usuario>()
                 .Include(u => u.Emprestimos)
@@ -77,7 +79,7 @@ namespace Data.Repository
             return true; // O usuário pode pegar emprestado o livro
         }
 
-        public bool CanUserReturnBook(int emprestimoId, int userId)
+        public bool UsuarioPodePegarLivro(int emprestimoId, int userId)
         {
             // Verificar se o empréstimo existe e pertence ao usuário
             bool emprestimoExists = _context.Set<Emprestimo>()
@@ -91,6 +93,10 @@ namespace Data.Repository
             return true; // O usuário pode devolver o livro
         }
 
+        public IList<Emprestimo> GetEmprestimosByUsuario(int usuarioId)
+        {
+            return _context.Emprestimos.Where(e => e.UsuarioId == usuarioId).ToList();
+        }
 
         
     }
