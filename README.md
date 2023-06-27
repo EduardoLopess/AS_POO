@@ -231,12 +231,12 @@ PUT /api/Autor/{id}
     
   Exemplo de corpo da requisição:
     
-    ```
+    
       {
         "dataEmprestimo": "2023-06-27T02:37:37.565",
         "dataDevolucao": "2023-06-30T02:37:37.565"
       }
-    ```
+    
   DELETE /api/Emprestimo/emprestimo/{emprestimoId}/user/{userId}/devolver
 
    - Registra a devolução de um livro em um empréstimo associado a um usuário específico.
@@ -246,13 +246,11 @@ PUT /api/Autor/{id}
 
   Exemplo de corpo da requisição:
   
-    ```
+    
       {
         "dataDevolucao": "2023-07-05T02:37:37.565"
       }
-    ```
-
-
+    
 
 
 
