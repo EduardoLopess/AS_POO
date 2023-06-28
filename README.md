@@ -4,6 +4,13 @@
 
 Esta API foi desenvolvida para gerenciar um sistema de biblioteca, fornecendo uma solução abrangente para operações CRUD (Criar, Ler, Atualizar e Excluir) relacionadas a livros, usuários, autores e empréstimos.
 
+# Visão geral
+
+![API endpoint](https://github.com/EduardoLopess/AS_POO/assets/80491564/71fd1a5b-652c-4c38-88dc-e911656430df)
+
+
+![api end user](https://github.com/EduardoLopess/AS_POO/assets/80491564/3eb2ebe6-893e-4bf6-897c-0fbca6a42271)
+
 ## LivroController
   POST, GET, PUT e DELETE
 
@@ -256,10 +263,3 @@ Exemplo de corpo da requisição:
 
 
 
-------------------
-Visão geral
-
-![API endpoint](https://github.com/EduardoLopess/AS_POO/assets/80491564/71fd1a5b-652c-4c38-88dc-e911656430df)
-
-
-![api end user](https://github.com/EduardoLopess/AS_POO/assets/80491564/3eb2ebe6-893e-4bf6-897c-0fbca6a42271)
