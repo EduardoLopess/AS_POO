@@ -65,7 +65,7 @@ namespace Data.Repository
 
             if (livroJaEmprestado)
             {
-                return false; // O livro já está emprestado
+                return false;
             }
 
             // Verificar se o livro já está presente em algum empréstimo existente
@@ -74,7 +74,7 @@ namespace Data.Repository
 
             if (livroJaEmprestadoEmEmprestimoExistente)
             {
-                return false; // O livro já está emprestado em algum empréstimo existente
+                return false; 
             }
 
             // Verificar se o livro já está emprestado pelo usuário
@@ -83,10 +83,10 @@ namespace Data.Repository
 
             if (livroJaEmprestadoPeloUsuario)
             {
-                return false; // O livro já está emprestado pelo usuário
+                return false; 
             }
 
-            return true; // O usuário pode pegar emprestado o livro
+            return true;
         }
 
 
