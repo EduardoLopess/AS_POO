@@ -89,9 +89,9 @@ Retorna um usuário específico com base no ID.
   Exemplo de corpo da requisição:
   ```
   {
-    "nome": "Novo Nome do Usuário",
-    "endereco": "Novo Endereço do Usuário",
-    "telefone": "Novo Telefone do Usuário"
+    "nome": "string",
+    "endereco": "string",
+    "telefone": "string"
   }
   ```
   DELETE /api/Usuario/{id}
