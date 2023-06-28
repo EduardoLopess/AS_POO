@@ -17,6 +17,7 @@ Esta API foi desenvolvida para gerenciar um sistema básico de biblioteca, forne
   POST /api/Livro
  
  - Cria um novo livro.
+   
     !! Autor deve ser informado junto !!
    Exemplo de corpo da requisição:  
 ``` 
@@ -43,6 +44,7 @@ Esta API foi desenvolvida para gerenciar um sistema básico de biblioteca, forne
   
   PUT /api/Livro/{id}
   - Atualiza as informações de um livro existente.
+    
      !! Autor deve ser informado junto !!
   Exemplo de corpo da requisição:
  ```
@@ -59,7 +61,11 @@ Esta API foi desenvolvida para gerenciar um sistema básico de biblioteca, forne
       }
     ]
   }
-```  
+```
+ DELETE /api/Livro/{id}
+  - Exclui um livro com base no ID.
+    
+      !! Autor não será deletado junto, deve ser atualizado com novo livro ou deletado !!  
 ## UsuarioController
   POST, GET, PUT e DELETE
   POST /api/Usuario
@@ -97,12 +103,13 @@ Retorna um usuário específico com base no ID.
   ```
   DELETE /api/Usuario/{id}
 - Exclui um usuário com base no ID.
-  
+   
 ## AutorController
   POST, GET, PUT e DELETE
 
    POST /api/Autor
   - Cria um novo autor.
+    
     !! Livro deve ser informado junto !!
   Exemplo de corpo da requisição:  
  ```
@@ -128,6 +135,7 @@ GET /api/Autor/{id}
     
 PUT /api/Autor/{id}
   - Atualiza as informações de um autor existente.
+    
   !! Livro deve ser informado junto !!
 Exemplo de corpo da requisição:
   ```
@@ -147,6 +155,8 @@ Exemplo de corpo da requisição:
   ```  
  DELETE /api/Autor/{id}
    - Exclui um autor com base no ID.
+     
+     !! Livro não será deletado junto, deve ser atualizado com novo autor ou deletado !!
          
 ## EmprestimoController
 
