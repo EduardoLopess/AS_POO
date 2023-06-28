@@ -14,8 +14,6 @@ Esta API foi desenvolvida para gerenciar um sistema de biblioteca, fornecendo um
 ## LivroController
   POST, GET, PUT e DELETE
 
-  LivroController
-
   POST /api/Livro
  
  - Cria um novo livro.
