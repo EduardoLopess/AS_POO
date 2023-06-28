@@ -28,7 +28,7 @@ public class EmprestimoController : ControllerBase
     [HttpGet("{id}")]
     public IActionResult GetById(int id)
     {
-        var emprestimos = _mapper.Map<AutorDTO>(_emprestimoRepository.GetById(id));
+        var emprestimos = _mapper.Map<EmprestimoDTO>(_emprestimoRepository.GetById(id));
         return HttpMessageOk(emprestimos);
     }
 
