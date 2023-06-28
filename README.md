@@ -121,7 +121,7 @@ GET /api/Autor/{id}
 PUT /api/Autor/{id}
   - Atualiza as informações de um autor existente.
   
-  Exemplo de corpo da requisição:
+Exemplo de corpo da requisição:
   ```
       {
         "nome": "string",
