@@ -1,7 +1,7 @@
 
-AS - Programação Orientada a Objetos.
+# API de Gerenciamento de Sistema de Biblioteca - Programação Orientada a Objetos
 
-API criada para atender ao gerenciamento de um sistema de biblioteca, dividido em quatro controladores diferentes, com suas respectivas operações REST.
+Esta API foi desenvolvida para gerenciar um sistema de biblioteca, fornecendo uma solução abrangente para operações CRUD (Criar, Ler, Atualizar e Excluir) relacionadas a livros, usuários, autores e empréstimos.
 
 ## LivroController
   POST, GET, PUT e DELETE
