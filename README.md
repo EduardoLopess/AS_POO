@@ -96,7 +96,8 @@ Retorna um usuário específico com base no ID.
 
    POST /api/Autor
   - Cria um novo autor.
-Exemplo de corpo da requisição:  
+    
+  Exemplo de corpo da requisição:  
  ```
     {
       "nome": "string",
