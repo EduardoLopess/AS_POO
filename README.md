@@ -2,7 +2,7 @@
   # API de Gerenciamento de Sistema de Biblioteca.  
   # Programação Orientada a Objetos.
 
-Esta API foi desenvolvida para gerenciar um sistema de biblioteca, fornecendo uma solução abrangente para operações CRUD (Criar, Ler, Atualizar e Excluir) relacionadas a livros, usuários, autores e empréstimos.
+Esta API foi desenvolvida para gerenciar um sistema básico de biblioteca, fornecendo uma solução abrangente para operações CRUD (Criar, Ler, Atualizar e Excluir) relacionadas a livros, usuários, autores e empréstimos.
 
 # Visão geral
 
