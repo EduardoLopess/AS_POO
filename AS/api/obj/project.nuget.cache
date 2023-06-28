@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IT0dQQSfrJkdzpYBBTQxq7LT/en+F52z9iX6sf5YOG4LIxsMQ1KIdI+Hi37degqNeDfgB3AYyKmaXkEoqmgcSA==",
+  "dgSpecHash": "FxTRkFaeabRPNoogaYfA87vvyTAI04UgM2WcNGyEarv0EIUoL7kAgilnJoo6UXp9ALS/nQ80Lq+gl1vEIZBA+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\api\\api.csproj",
+  "projectFilePath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dudul\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\dudul\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

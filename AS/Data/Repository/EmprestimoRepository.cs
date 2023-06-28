@@ -50,34 +50,48 @@ namespace Data.Repository
         public IList<Emprestimo> GetAllByUserId(int userId)
         {
             return _context.Set<Emprestimo>()
-                .Include(a => a.Usuario)
+                .Include(u => u.Usuario)
                 .Include(l => l.Livro)
+                .Include(a => a.Livro.Autores)
                     .Where(e => e.UsuarioId == userId)
                         .ToList();
         }
 
         public bool CanUserBorrowBook(int userId, int livroId)
         {
-            Usuario usuario = _context.Set<Usuario>()
-                .Include(u => u.Emprestimos)
-                .SingleOrDefault(u => u.Id == userId);
-
-            if (usuario == null)
-            {
-                return false; // Usuário não encontrado
-            }
-
-            // Verificar se o livro já está emprestado pelo usuário
-            bool livroJaEmprestado = usuario.Emprestimos
+            // Verificar se o livro já está emprestado para qualquer usuário
+            bool livroJaEmprestado = _context.Set<Emprestimo>()
                 .Any(e => e.LivroId == livroId && e.DataDevolucao == null);
 
             if (livroJaEmprestado)
+            {
+                return false; // O livro já está emprestado
+            }
+
+            // Verificar se o livro já está presente em algum empréstimo existente
+            bool livroJaEmprestadoEmEmprestimoExistente = _context.Set<Emprestimo>()
+                .Any(e => e.LivroId == livroId);
+
+            if (livroJaEmprestadoEmEmprestimoExistente)
+            {
+                return false; // O livro já está emprestado em algum empréstimo existente
+            }
+
+            // Verificar se o livro já está emprestado pelo usuário
+            bool livroJaEmprestadoPeloUsuario = _context.Set<Emprestimo>()
+                .Any(e => e.LivroId == livroId && e.UsuarioId == userId && e.DataDevolucao == null);
+
+            if (livroJaEmprestadoPeloUsuario)
             {
                 return false; // O livro já está emprestado pelo usuário
             }
 
             return true; // O usuário pode pegar emprestado o livro
         }
+
+
+
+
 
         public bool CanUserReturnBook(int emprestimoId, int userId)
         {

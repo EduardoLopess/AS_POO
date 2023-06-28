@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj": {}
+    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj": {
+    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\dudul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Data\\obj\\",
+        "outputPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dudul\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj"
+              "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Domain\\Domain.csproj"
               }
             }
           }
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj": {
+    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\dudul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO_2023-main\\AS_POO_2023\\AS\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dudul\\AppData\\Roaming\\NuGet\\NuGet.Config"
