@@ -76,11 +76,15 @@ public class EmprestimoController : ControllerBase
         if (!_emprestimoRepository.CanUserBorrowBook(userId, livroId))
             return HttpMessageError("Usuário não pode pegar emprestado este livro");
 
+        var dataEmprestimo = DateTime.Now;
+        var dataDevolucao = dataEmprestimo.AddDays(7); // Exemplo: devolução após 7 dias
+
         var emprestimo = new Emprestimo
         {
             UsuarioId = userId,
             LivroId = livroId,
-            DataEmprestimo = DateTime.Now
+            DataEmprestimo = dataEmprestimo,
+            DataDevolucao = dataDevolucao // Definir a data de devolução
         };
 
         _emprestimoRepository.Create(emprestimo);
