@@ -17,6 +17,7 @@ Esta API foi desenvolvida para gerenciar um sistema básico de biblioteca, forne
   POST /api/Livro
  
  - Cria um novo livro.
+    !! Autor deve ser informado junto !!
    Exemplo de corpo da requisição:  
 ``` 
   {
@@ -42,7 +43,7 @@ Esta API foi desenvolvida para gerenciar um sistema básico de biblioteca, forne
   
   PUT /api/Livro/{id}
   - Atualiza as informações de um livro existente.
-
+     !! Autor deve ser informado junto !!
   Exemplo de corpo da requisição:
  ```
     {
@@ -102,7 +103,7 @@ Retorna um usuário específico com base no ID.
 
    POST /api/Autor
   - Cria um novo autor.
-    
+    !! Livro deve ser informado junto !!
   Exemplo de corpo da requisição:  
  ```
     {
@@ -127,7 +128,7 @@ GET /api/Autor/{id}
     
 PUT /api/Autor/{id}
   - Atualiza as informações de um autor existente.
-  
+  !! Livro deve ser informado junto !!
 Exemplo de corpo da requisição:
   ```
       {
