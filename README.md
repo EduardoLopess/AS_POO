@@ -67,7 +67,7 @@ Esta API foi desenvolvida para gerenciar um sistema básico de biblioteca, forne
  DELETE /api/Livro/{id}
   - Exclui um livro com base no ID.
     
-      -> Autor não será deletado junto, deve ser atualizado com novo livro ou deletado!
+      -> Autor não será deletado junto, deve ser atualizado com novo autor ou deletado!
     
 ## UsuarioController
   POST, GET, PUT e DELETE
