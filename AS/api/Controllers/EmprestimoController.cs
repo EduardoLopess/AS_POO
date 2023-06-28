@@ -44,7 +44,7 @@ public class EmprestimoController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public IActionResult Update(int id, AutorViewModel model)
+    public IActionResult Update(int id, EmprestimoViewModel model)
     {
         if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
         var emprestimo = _mapper.Map<Emprestimo>(model);
