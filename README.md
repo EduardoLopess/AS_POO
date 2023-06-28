@@ -143,7 +143,7 @@ Exemplo de corpo da requisição:
          
 ## EmprestimoController
 
-> O controller de empréstimo conta com o acréscimo de mais três rotas responsáveis por controlar o empréstimo e devolução do usuário.
+> O controller de empréstimo conta com o acréscimo de mais três rotas responsáveis por controlar o empréstimo de um livre específico e sua devolução vinculada ao usuário.
 
 
   POST, GET, PUT, DELETE, GET, POST e DELETE
