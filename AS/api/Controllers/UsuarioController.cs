@@ -39,7 +39,7 @@ namespace api.Controllers
                 // Mapear os livros para cada empréstimo
                 foreach (var emprestimoDTO in usuarioDTO.Emprestimos)
                 {
-                    var livro = _livroRepository.GetById(emprestimoDTO.LivroId); // Ou método equivalente para obter o livro
+                    var livro = _livroRepository.GetById(emprestimoDTO.LivroId);
                     emprestimoDTO.Livro = _mapper.Map<LivroDTO>(livro);
                 }
             }
@@ -57,8 +57,6 @@ namespace api.Controllers
         [HttpPost]
         public IActionResult Create(UsuarioViewModel model)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
-
             var usuario = _mapper.Map<Usuario>(model);
             _usuarioRepository.Create(usuario);
 
@@ -68,7 +66,6 @@ namespace api.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(int id, UsuarioViewModel model)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
             var usuario = _mapper.Map<Usuario>(model);
             usuario.Id = id;
             _usuarioRepository.Update(usuario);

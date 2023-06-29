@@ -1889,35 +1889,40 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dudul\\.nuget\\packages\\": {}
+    "C:\\Users\\Edu\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\api\\api.csproj",
+      "projectUniqueName": "C:\\Users\\Edu\\Desktop\\GIT_AS_POO\\as_poo\\AS\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\api\\api.csproj",
-      "packagesPath": "C:\\Users\\dudul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\api\\obj\\",
+      "projectPath": "C:\\Users\\Edu\\Desktop\\GIT_AS_POO\\as_poo\\AS\\api\\api.csproj",
+      "packagesPath": "C:\\Users\\Edu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Edu\\Desktop\\GIT_AS_POO\\as_poo\\AS\\api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\dudul\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Edu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Data\\Data.csproj"
+            "C:\\Users\\Edu\\Desktop\\GIT_AS_POO\\as_poo\\AS\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\Edu\\Desktop\\GIT_AS_POO\\as_poo\\AS\\Data\\Data.csproj"
             },
-            "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\novo\\AS_POO\\AS\\Domain\\Domain.csproj"
+            "C:\\Users\\Edu\\Desktop\\GIT_AS_POO\\as_poo\\AS\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Edu\\Desktop\\GIT_AS_POO\\as_poo\\AS\\Domain\\Domain.csproj"
             }
           }
         }
@@ -1978,7 +1983,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

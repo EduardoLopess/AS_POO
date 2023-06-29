@@ -43,9 +43,6 @@ namespace api.Controllers
         [HttpPost]
         public IActionResult Create(LivroViewModel model)
         {
-            if (!ModelState.IsValid)
-                return HttpMessageError("Dados incorretos");
-
             var livro = _mapper.Map<Livro>(model);
             _livroRepository.Create(livro);
 
@@ -56,9 +53,6 @@ namespace api.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(int id, LivroViewModel model)
         {
-            if (!ModelState.IsValid)
-                return HttpMessageError("Dados incorretos");
-
             var livro = _livroRepository.GetById(id);
             if (livro == null)
                 return NotFound();

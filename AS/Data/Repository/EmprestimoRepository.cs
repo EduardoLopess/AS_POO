@@ -89,10 +89,6 @@ namespace Data.Repository
             return true;
         }
 
-
-
-
-
         public bool CanUserReturnBook(int emprestimoId, int userId)
         {
             // Verificar se o empréstimo existe e pertence ao usuário

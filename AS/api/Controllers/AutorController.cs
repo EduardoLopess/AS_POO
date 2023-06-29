@@ -42,8 +42,6 @@ namespace api.Controllers
         [HttpPost]
         public IActionResult Create(AutorViewModel model)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
-
             var autor = _mapper.Map<Autor>(model);
             _autorRepository.Create(autor);
 
@@ -54,8 +52,6 @@ namespace api.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(int id, AutorViewModel model)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
-
             var autor = _mapper.Map<Autor>(model);
             autor.Id = id;
             _autorRepository.Update(autor);
